@@ -12,8 +12,9 @@ public class Place {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column(name = "fio")
-    private String fio;
+
+    @Column(name = "name")
+    private String name;
 
     @Column(name = "film_id", nullable = false)
     private long filmId;
