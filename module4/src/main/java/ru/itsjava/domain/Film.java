@@ -23,7 +23,7 @@ public class Film {
     @JoinColumn(name = "genre_id")
     private Genre genre;
 
-    @OneToMany(targetEntity = Place.class, fetch = FetchType.LAZY)
+    @OneToMany(targetEntity = Place.class, fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "film_id")
     public List<Place> places;
 }
