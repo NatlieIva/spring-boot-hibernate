@@ -6,6 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.sql.SQLException;
 
+//1. Раскоментировать зависимость spring-boot-starter-data-jpa
+//2. Добавить на сущности аннотации Entity, Id и GeneratedValue
 
 @SpringBootApplication
 public class MyApp {

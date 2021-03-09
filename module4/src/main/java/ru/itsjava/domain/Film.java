@@ -16,7 +16,7 @@ public class Film {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @JoinColumn(name = "title")
+    @Column(name = "title")
     private String title;
 
     @ManyToOne(targetEntity = Genre.class, cascade = CascadeType.ALL)

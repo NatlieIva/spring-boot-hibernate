@@ -6,6 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.sql.SQLException;
 
+//Проставить сущностям необходимые аннотации
+//Добавить в сущность фильм поле Genre
+//Прописать связь один к одному
 
 @SpringBootApplication
 public class MyApp {

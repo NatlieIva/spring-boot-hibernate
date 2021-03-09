@@ -14,6 +14,7 @@ public class Genre {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @JoinColumn(name = "name")
+
+    @Column(name = "name")
     private String name;
 }

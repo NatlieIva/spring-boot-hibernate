@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.sql.SQLException;
 
-
+//Проставить на сущностях связи Многие к одному и Один ко многим
 @SpringBootApplication
 public class MyApp {
 
