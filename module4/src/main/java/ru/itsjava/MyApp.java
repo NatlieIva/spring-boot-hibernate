@@ -22,11 +22,18 @@ public class MyApp {
     public static void main(String[] args) throws SQLException {
         var context = SpringApplication.run(MyApp.class);
 
-//        FilmRepositoryImpl filmRepository = context.getBean(FilmRepositoryImpl.class);
-//        Film film = filmRepository.save(new Film(0L, "best film",
-//                new Genre(0L, "fant"),
-//                List.of(new Place(0L, "best place", 1L))));
-//
-//        System.out.println(filmRepository.getById(1L));
+        FilmRepository filmRepository = context.getBean(FilmRepository.class);
+        Film film = filmRepository.save(new Film(0L, "best film",
+                new Genre(0L, "fant"),
+                List.of(new Place(0L, "best place", 1L))));
+
+        System.out.println(filmRepository.getById(1L));
+//        filmRepository.deleteById(1L);
+//        System.out.println(filmRepository.getById(1L) + "after delete");
+
+        film.setGenre(new Genre(0L, "comedy"));
+        filmRepository.updateFilm(film);
+        System.out.println(filmRepository.getById(1L) + "after update");
+
     }
 }

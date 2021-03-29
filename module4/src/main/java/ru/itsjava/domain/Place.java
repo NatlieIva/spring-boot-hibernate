@@ -19,6 +19,6 @@ public class Place {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "film_id", nullable = false)
+    @Column(name = "film_id")
     private long filmId;
 }
